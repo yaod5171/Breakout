@@ -92,6 +92,9 @@ public class Breakout extends Canvas implements KeyListener, Runnable {
         graphToBack.drawString("29 Apr 2019", 50, 560);
         graphToBack.drawString("P1 CA-SU-F106-26", 150, 540);
         graphToBack.drawString("Score = " + score, 700, 540);
+        if (score == 20) {
+            graphToBack.drawString("You Win!", 700, 560);
+        }
 
         //see if ball hits top wall or bottom wall
         if (!(ball.getyPos() >= 20 && ball.getyPos() <= 510)) {
