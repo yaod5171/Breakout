@@ -19,6 +19,7 @@ public class TheGame extends JFrame {
         ((Component) game).setFocusable(true);
         getContentPane().add(game);
 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
 
